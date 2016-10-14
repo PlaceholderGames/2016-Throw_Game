@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <groups>
     <group eventID="1" id="0">
-        <step comment="false" x="120" y="79">
+        <step comment="false" x="147" y="227">
             <group eventID="1" id="-1">
-                <if comment="false" x="131" y="104">
+                <if comment="false" x="158" y="252">
                     <group eventID="1" id="-1">
-                        <scene-enabledisable-snippet comment="false" x="142" y="139">
+                        <scene-enabledisable-snippet comment="false" x="169" y="287">
                             <int id="0" val="1"/>
                             <int id="1" val="ThrowShuriken"/>
                         </scene-enabledisable-snippet>
@@ -17,9 +17,9 @@
                         <int id="1" val="5"/>
                     </eq>
                 </if>
-                <else-if comment="false" x="131" y="178">
+                <else-if comment="false" x="158" y="326">
                     <group eventID="1" id="-1">
-                        <scene-enabledisable-snippet comment="false" x="142" y="213">
+                        <scene-enabledisable-snippet comment="false" x="169" y="361">
                             <int id="0" val="0"/>
                             <int id="1" val="ThrowShuriken"/>
                         </scene-enabledisable-snippet>
@@ -28,7 +28,7 @@
                         <as-number comment="false" id="0" x="0" y="0">
                             <get-val-16-1 comment="false" id="0" x="0" y="0"/>
                         </as-number>
-                        <int id="1" val=""/>
+                        <int id="1" val="5"/>
                     </less>
                 </else-if>
             </group>
@@ -36,9 +36,33 @@
     </group>
     <group eventID="1" id="-1"/>
     <group eventID="2" id="0">
+        <init comment="false" x="379" y="97">
+            <group eventID="2" id="-1">
+                <draw-text comment="false" x="390" y="122">
+                    <str-toupperlower comment="false" id="0" x="0" y="0">
+                        <int id="0" val=""/>
+                        <int id="1" val="1"/>
+                    </str-toupperlower>
+                    <int id="1" val="5"/>
+                    <int id="2" val="5"/>
+                </draw-text>
+                <draw-text comment="false" x="390" y="155">
+                    <int id="0" val=""/>
+                    <int id="1" val="7"/>
+                    <int id="2" val="5"/>
+                </draw-text>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1">
+        <as-number comment="false" x="587" y="313">
+            <get-val-16-1 comment="false" id="0" x="0" y="0"/>
+        </as-number>
+    </group>
+    <group eventID="3" id="0">
         <step comment="false" x="15" y="15">
-            <group eventID="2" id="-1"/>
+            <group eventID="3" id="-1"/>
         </step>
     </group>
-    <group eventID="2" id="-1"/>
+    <group eventID="3" id="-1"/>
 </groups>

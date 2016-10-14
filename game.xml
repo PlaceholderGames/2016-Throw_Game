@@ -66,17 +66,21 @@
     <groups>
         <group desc="" id="5" name="Throwable"/>
         <group desc="" id="6" name="Door"/>
+        <group desc="" id="7" name="Button"/>
     </groups>
     <cgroups>
         <cgroup g1="0" g2="1"/>
         <cgroup g1="0" g2="5"/>
+        <cgroup g1="0" g2="6"/>
+        <cgroup g1="0" g2="7"/>
         <cgroup g1="1" g2="3"/>
         <cgroup g1="1" g2="5"/>
         <cgroup g1="3" g2="3"/>
         <cgroup g1="3" g2="5"/>
         <cgroup g1="3" g2="6"/>
+        <cgroup g1="3" g2="7"/>
         <cgroup g1="5" g2="6"/>
-        <cgroup g1="0" g2="6"/>
+        <cgroup g1="5" g2="7"/>
     </cgroups>
     <input>
         <key id="0" keyname="UP" name="up" vk="38" vks="38"/>
@@ -97,6 +101,8 @@
     <attributes>
         <boolean cid="-1" id="1" name="ButtonActivation" save="true" value="false"/>
         <boolean cid="-1" id="0" name="Pickup" save="true" value="false"/>
+        <boolean cid="-1" id="2" name="Facing Left" save="true" value="false"/>
+        <boolean cid="-1" id="3" name="Facing right" save="true" value="true"/>
     </attributes>
     <collisions>
         <poly id="0" name="Square" pts="0.0,0.0#0.0,1.0#1.0,1.0#1.0,0.0"/>
@@ -127,7 +133,7 @@
     </collisions>
     <autotileFormats/>
     <atlases>
-        <atlas allScenes="true" desc="" dirty="true" id="0" members="0,1,2,3,5,7,9,11," name="Main Atlas" pvr="false" resize="0" target="0"/>
+        <atlas allScenes="true" desc="" dirty="true" id="0" members="0,1,2,3,7,9,11," name="Main Atlas" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="1" members="" name="Atlas 2" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="2" members="" name="Atlas 3" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="3" members="" name="Atlas 4" pvr="false" resize="0" target="0"/>

@@ -69,13 +69,16 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_5 extends ActorScript
+class ActorEvents_3 extends ActorScript
 {
+	public var _Pickedup:Bool;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
+		nameMap.set("Pickedup", "_Pickedup");
+		_Pickedup = false;
 		
 	}
 	

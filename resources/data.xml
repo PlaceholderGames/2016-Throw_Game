@@ -3,27 +3,17 @@
     <custom-block blocktag="custom-13" blocktype="ACTION" code=".say(&quot;ActorEvents_11&quot;, &quot;_customBlock_&quot;);" desc="" global="false" gui="Missing" id="13" message="" name="" oid="-1" return="void" shared="false" snippetID="13">
         <blank name="Self" order="0" type="actor"/>
     </custom-block>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="1" continuous="true" desc="" eventsnippetid="12" fixedrot="true" fric="1.0" gid="5" id="9" ignoreg="true" inertia="2.0" ldamp="0.0" mass="1.0" name="Button" oid="-1" pausable="true" physicsMode="0" rest="0.3" shared="false" sprite="10" static="false">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="1" continuous="true" desc="" eventsnippetid="12" fixedrot="true" fric="1.0" gid="7" id="9" ignoreg="true" inertia="2.0" ldamp="0.0" mass="1.0" name="Button" oid="-1" pausable="true" physicsMode="0" rest="0.3" shared="false" sprite="10" static="false">
         <snippets>
             <s enabled="true" id="14">
                 <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="1" list="0" val="false"/>
+                <prop id="2" list="0" val="5"/>
             </s>
         </snippets>
     </actor>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="8" fixedrot="true" fric="1.0" gid="5" id="7" ignoreg="false" inertia="2.0" ldamp="0.0" mass="1.0" name="Can" oid="-1" pausable="true" physicsMode="0" rest="0.3" shared="false" sprite="8" static="false">
         <snippets/>
-    </actor>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="6" fixedrot="false" fric="0.2" gid="3" id="5" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Clown" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="6" static="false">
-        <snippets>
-            <s enabled="true" id="3">
-                <prop id="2147483647" list="0" val="thisactor"/>
-                <prop id="1" list="0" val="2"/>
-                <prop id="2" list="0" val="Stomped"/>
-                <prop id="3" list="0" val="40"/>
-                <prop id="4" list="0" val="50"/>
-            </s>
-        </snippets>
     </actor>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="13" fixedrot="false" fric="0.2" gid="6" id="11" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Door" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="12" static="true">
         <snippets/>
@@ -193,12 +183,6 @@
         </snippets>
     </actor>
     <music atlasID="0" desc="" id="2" loop="true" name="Stomp" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="6" name="Stomper" shared="false" width="32">
-        <anim across="3" down="2" durations="100,100,100,100,100,100" height="128" id="0" loop="true" name="Idle" numframes="6" originx="16" originy="32" sync="false" version="2" width="96">
-            <poly data="4,0,34,32,34,32,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
-        </anim>
-        <anim across="1" down="1" durations="100" height="64" id="1" loop="true" name="Stomped" numframes="1" originx="21" originy="32" sync="false" version="2" width="42"/>
-    </sprite>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="25" id="8" name="Stomper" shared="false" width="25">
         <anim across="1" down="1" durations="100" height="25" id="0" loop="true" name="Idle" numframes="1" originx="50" originy="50" sync="false" version="2" width="25">
             <poly data="4,5,2,19,2,19,24,5,24" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
@@ -206,7 +190,10 @@
     </sprite>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="25" id="10" name="Stomper" shared="false" width="25">
         <anim across="1" down="1" durations="100" height="25" id="0" loop="true" name="Idle" numframes="1" originx="50" originy="50" sync="false" version="2" width="25">
-            <poly data="4,5,2,19,2,19,24,5,24" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
+            <poly data="4,0,10,25,10,25,24,0,24" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="25" id="1" loop="true" name="Pressed" numframes="1" originx="12" originy="12" sync="false" version="2" width="25">
+            <poly data="4,0,0,25,0,25,25,0,25" density="0.1" fric="0.2" gid="-1000" id="0" name="Pressed" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
 </pack>

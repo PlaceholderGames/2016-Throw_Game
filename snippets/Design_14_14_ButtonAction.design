@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <groups>
     <group eventID="1" id="0">
-        <event-collide-actortoactor comment="false" x="435" y="238">
+        <event-collide-grouptogroup comment="false" x="41" y="117">
             <group eventID="1" id="-1">
-                <set-game-val-1 comment="false" x="446" y="270">
+                <set-game-val-1 comment="false" x="52" y="149">
                     <true comment="false" id="0" x="0" y="0"/>
                 </set-game-val-1>
+                <setanim comment="false" x="52" y="174">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="Pressed"/>
+                </setanim>
             </group>
-            <ACTOR eid="var" id="0" vid="2"/>
-            <ACTOR eid="this" id="1"/>
-        </event-collide-actortoactor>
+            <actorgroup eid="5" id="0"/>
+            <actorgroup eid="7" id="1"/>
+        </event-collide-grouptogroup>
     </group>
     <group eventID="1" id="-1"/>
 </groups>
