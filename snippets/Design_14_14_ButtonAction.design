@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <groups>
     <group eventID="1" id="0">
-        <event-collide-actortotype comment="false" x="61" y="53">
+        <event-collide-actortoactor comment="false" x="435" y="238">
             <group eventID="1" id="-1">
-                <set-game-val-1 comment="false" x="72" y="85">
+                <set-game-val-1 comment="false" x="446" y="270">
                     <true comment="false" id="0" x="0" y="0"/>
                 </set-game-val-1>
             </group>
-            <ACTOR eid="lastcollided" id="0"/>
-            <actortype eid="9" id="1"/>
-        </event-collide-actortotype>
+            <ACTOR eid="var" id="0" vid="2"/>
+            <ACTOR eid="this" id="1"/>
+        </event-collide-actortoactor>
     </group>
     <group eventID="1" id="-1"/>
 </groups>
