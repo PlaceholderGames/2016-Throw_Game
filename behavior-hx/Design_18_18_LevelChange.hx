@@ -70,18 +70,36 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_2 extends SceneScript
+class Design_18_18_LevelChange extends SceneScript
 {
+	public var _Exit:Region;
+	public var _Player:Actor;
+	public var _NextScene:Scene;
 	
 	
 	public function new(dummy:Int, dummy2:Engine)
 	{
 		super();
+		nameMap.set("Exit", "_Exit");
+		nameMap.set("Player", "_Player");
+		nameMap.set("NextScene", "_NextScene");
 		
 	}
 	
 	override public function init()
 	{
+		
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				if(isInRegion(_Player, _Exit))
+				{
+					switchScene(_NextScene.getID(), createBubblesOut(2, Utils.getColorRGB(0,0,0)), createCircleIn(2, Utils.getColorRGB(0,0,0)));
+				}
+			}
+		});
 		
 	}
 	

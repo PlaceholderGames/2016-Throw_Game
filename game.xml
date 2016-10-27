@@ -67,18 +67,21 @@
         <group desc="" id="5" name="Throwable"/>
         <group desc="" id="6" name="Door"/>
         <group desc="" id="7" name="Button"/>
+        <group desc="" id="8" name="Exit"/>
     </groups>
     <cgroups>
         <cgroup g1="0" g2="1"/>
         <cgroup g1="0" g2="5"/>
         <cgroup g1="0" g2="6"/>
         <cgroup g1="0" g2="7"/>
+        <cgroup g1="0" g2="8"/>
         <cgroup g1="1" g2="3"/>
         <cgroup g1="1" g2="5"/>
         <cgroup g1="3" g2="3"/>
         <cgroup g1="3" g2="5"/>
         <cgroup g1="3" g2="6"/>
         <cgroup g1="3" g2="7"/>
+        <cgroup g1="3" g2="8"/>
         <cgroup g1="5" g2="6"/>
         <cgroup g1="5" g2="7"/>
     </cgroups>
@@ -133,7 +136,7 @@
     </collisions>
     <autotileFormats/>
     <atlases>
-        <atlas allScenes="true" desc="" dirty="true" id="0" members="0,1,2,3,7,9,11," name="Main Atlas" pvr="false" resize="0" target="0"/>
+        <atlas allScenes="true" desc="" dirty="true" id="0" members="1,2,3,7,9,11,14,19,20," name="Main Atlas" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="1" members="" name="Atlas 2" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="2" members="" name="Atlas 3" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="3" members="" name="Atlas 4" pvr="false" resize="0" target="0"/>

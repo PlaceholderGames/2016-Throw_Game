@@ -70,18 +70,57 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_2 extends SceneScript
+class Design_20_20_CanLimitDisplay extends SceneScript
 {
+	public var _canleft:String;
+	public var _CanAmount:Float;
+	public var _Player:Actor;
 	
 	
 	public function new(dummy:Int, dummy2:Engine)
 	{
 		super();
+		nameMap.set("canleft", "_canleft");
+		_canleft = "Can(s) Left:";
+		nameMap.set("CanAmount", "_CanAmount");
+		_CanAmount = 5.0;
+		nameMap.set("Player", "_Player");
 		
 	}
 	
 	override public function init()
 	{
+		
+		/* ============================ Click ============================= */
+		addMousePressedListener(function(list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				if((_CanAmount >= 1))
+				{
+					_CanAmount = asNumber((_CanAmount - 1));
+					propertyChanged("_CanAmount", _CanAmount);
+				}
+			}
+		});
+		
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				_Player.setActorValue("Can Display", _CanAmount);
+			}
+		});
+		
+		/* ========================= When Drawing ========================= */
+		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				g.drawString("" + _Player.getActorValue("Can Display"), 0, 0);
+			}
+		});
 		
 	}
 	
