@@ -69,44 +69,21 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class Design_15_15_Throw extends ActorScript
+class ActorEvents_3 extends ActorScript
 {
-	public var _CanAmount:Float;
+	public var _CansLeft:String;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
-		nameMap.set("Actor", "actor");
-		nameMap.set("CanAmount", "_CanAmount");
-		_CanAmount = 5.0;
+		nameMap.set("CansLeft", "_CansLeft");
+		_CansLeft = "Cans left:";
 		
 	}
 	
 	override public function init()
 	{
-		
-		/* ============================ Click ============================= */
-		addMousePressedListener(function(list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				if(((getMouseX() < actor.getX()) && (_CanAmount > 0)))
-				{
-					createRecycledActor(getActorType(7), actor.getX(), actor.getY(), Script.BACK);
-					getLastCreatedActor().setVelocity(-135, 50);
-					_CanAmount = asNumber((_CanAmount - 1));
-					propertyChanged("_CanAmount", _CanAmount);
-				}
-				else if(((getMouseX() > actor.getX()) && (_CanAmount > 0)))
-				{
-					createRecycledActor(getActorType(7), actor.getXCenter(), actor.getYCenter(), Script.MIDDLE);
-					getLastCreatedActor().setVelocity(-45, 50);
-					_CanAmount = asNumber((_CanAmount - 1));
-					propertyChanged("_CanAmount", _CanAmount);
-				}
-			}
-		});
 		
 	}
 	

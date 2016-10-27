@@ -101,6 +101,7 @@ class Design_7_7_Walking extends ActorScript
 		/* ======================== When Creating ========================= */
 		actor.makeAlwaysSimulate();
 		actor.setActorValue("Facing Right?", true);
+		Engine.engine.setGameAttribute("Facing right", true);
 		
 		/* ======================== When Updating ========================= */
 		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void

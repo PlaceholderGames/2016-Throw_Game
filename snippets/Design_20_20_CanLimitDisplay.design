@@ -1,31 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <groups>
-    <group eventID="1" id="0">
-        <event-mouse-press-release comment="false" x="158" y="21">
-            <group eventID="1" id="-1">
-                <if comment="false" x="169" y="48">
-                    <group eventID="1" id="-1">
-                        <set-val-20-2 comment="false" x="180" y="78">
-                            <minus comment="false" id="0" x="0" y="0">
-                                <get-val-20-2 comment="false" id="0" x="0" y="0"/>
-                                <int id="1" val="1"/>
-                            </minus>
-                        </set-val-20-2>
-                    </group>
-                    <moreeq comment="false" id="0" x="0" y="0">
-                        <get-val-20-2 comment="false" id="0" x="0" y="0"/>
-                        <int id="1" val="1"/>
-                    </moreeq>
-                </if>
-            </group>
-            <int id="0" val="0"/>
-        </event-mouse-press-release>
-    </group>
-    <group eventID="1" id="-1"/>
     <group eventID="2" id="0">
-        <step comment="false" x="78" y="49">
+        <step comment="false" x="209" y="104">
             <group eventID="2" id="-1">
-                <actor-set-prop comment="false" x="89" y="74">
+                <actor-set-prop comment="false" x="220" y="129">
                     <ACTOR eid="var" id="0" vid="3"/>
                     <int id="1" val="Can Display"/>
                     <get-val-20-2 comment="false" id="2" x="0" y="0"/>
@@ -42,8 +20,8 @@
                         <ACTOR eid="var" id="0" vid="3"/>
                         <int id="1" val="Can Display"/>
                     </actor-get-prop>
-                    <int id="1" val="0"/>
-                    <int id="2" val="0"/>
+                    <int id="1" val="5"/>
+                    <int id="2" val="3"/>
                 </draw-text>
             </group>
         </draw>

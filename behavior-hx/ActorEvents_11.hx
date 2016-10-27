@@ -69,7 +69,7 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_7 extends ActorScript
+class ActorEvents_11 extends ActorScript
 {
 	
 	
@@ -81,6 +81,18 @@ class ActorEvents_7 extends ActorScript
 	
 	override public function init()
 	{
+		
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				if((Engine.engine.getGameAttribute("ButtonActivation") == true))
+				{
+					actor.setAnimation("" + "Unlocked");
+				}
+			}
+		});
 		
 	}
 	
