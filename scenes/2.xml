@@ -13,9 +13,9 @@
         <actor a="0.0" aid="3" c="false" group="6" id="11" name="Door 3" sx="1.0" sy="1.0" x="564" y="320" z="0"/>
         <actor a="0.0" aid="4" c="false" group="6" id="11" name="Door 4" sx="1.0" sy="1.0" x="144" y="414" z="0"/>
         <actor a="0.0" aid="5" c="false" group="6" id="11" name="Door 5" sx="1.0" sy="1.0" x="566" y="403" z="0"/>
-        <actor a="0.0" aid="6" c="false" group="6" id="11" name="Door 6" sx="1.0" sy="1.0" x="148" y="332" z="0"/>
+        <actor a="90.78888" aid="6" c="false" group="6" id="11" name="Door 6" sx="1.0" sy="1.0" x="148" y="332" z="0"/>
         <actor a="0.0" aid="7" c="false" group="6" id="11" name="Door 7" sx="1.0" sy="1.0" x="3" y="414" z="0"/>
-        <actor a="0.0" aid="8" c="false" group="7" id="9" name="Button 8" sx="1.0" sy="1.0" x="516" y="264" z="0"/>
+        <actor a="0.0" aid="8" c="false" group="7" id="9" name="Button 8" sx="1.0" sy="1.0" x="517" y="255" z="0"/>
         <actor a="0.0" aid="9" c="false" group="0" id="3" name="Phrow 9" sx="1.0" sy="1.0" x="90" y="18" z="0"/>
     </actors>
     <snippets/>

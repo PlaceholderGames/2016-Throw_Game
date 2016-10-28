@@ -91,7 +91,7 @@
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_15_15_Throw" classname="scripts.Design_15_15_Throw" desc="" description="" design="true" drawOrder="0" id="15" name="Throw" oid="-1" package="scripts" shared="false" type="actor">
         <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
-        <number default="5.0" defaultValue="5.0" desc="" dropdown="" fullname="CanAmount" hidden="false" id="1" name="_CanAmount" order="1"/>
+        <number default="6.0" defaultValue="6.0" desc="" dropdown="" fullname="CanAmount" hidden="false" id="1" name="_CanAmount" order="1"/>
         <blocks/>
         <events>
             <event displayName="Keyboard" enabled="true" id="2" name="event-key-press-release" order="2" repeats="true"/>

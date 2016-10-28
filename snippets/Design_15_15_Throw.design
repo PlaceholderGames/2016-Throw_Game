@@ -77,7 +77,7 @@
                     </more>
                 </if>
             </group>
-            <control eid="5" id="0"/>
+            <control eid="7" id="0"/>
             <int id="1" val="0"/>
         </event-key-press-release>
     </group>
