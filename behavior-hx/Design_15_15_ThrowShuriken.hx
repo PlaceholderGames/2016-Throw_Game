@@ -69,21 +69,42 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_3 extends ActorScript
+class Design_15_15_ThrowShuriken extends ActorScript
 {
-	public var _Pickedup:Bool;
+	public var _Projectile:ActorType;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
-		nameMap.set("Pickedup", "_Pickedup");
-		_Pickedup = false;
+		nameMap.set("Actor", "actor");
+		nameMap.set("Projectile", "_Projectile");
+		_Projectile = getActorType(7);
 		
 	}
 	
 	override public function init()
 	{
+		
+		/* ============================ Click ============================= */
+		addMousePressedListener(function(list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				if(Engine.engine.getGameAttribute("Facing right"))
+				{
+					createRecycledActor(_Projectile, actor.getXCenter(), actor.getYCenter(), Script.FRONT);
+					getLastCreatedActor().setVelocity((180 * (Math.atan2((getMousePressedY() - (actor.getScreenY() + ((actor.getWidth()) * .5))), (getMouseX() - (actor.getScreenX() + ((actor.getWidth()) * .5)))) / Math.PI)), (Engine.engine.getGameAttribute("ButtonActivation") + 80));
+					getLastCreatedActor().killSelfAfterLeavingScreen();
+				}
+				else if(Engine.engine.getGameAttribute("Facing Left"))
+				{
+					createRecycledActor(_Projectile, actor.getXCenter(), actor.getYCenter(), Script.BACK);
+					getLastCreatedActor().setVelocity((180 * (Math.atan2((getMousePressedY() - (actor.getScreenY() + ((actor.getWidth()) * .5))), (getMouseX() - (actor.getScreenX() + ((actor.getWidth()) * .5)))) / Math.PI)), (Engine.engine.getGameAttribute("ButtonActivation") + 80));
+					getLastCreatedActor().killSelfAfterLeavingScreen();
+				}
+			}
+		});
 		
 	}
 	

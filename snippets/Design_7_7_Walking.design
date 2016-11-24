@@ -11,6 +11,9 @@
                     <int id="1" val="Facing Right?"/>
                     <true comment="false" id="2" x="0" y="0"/>
                 </actor-set-prop>
+                <set-game-val-3 comment="false" x="26" y="99">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-game-val-3>
             </group>
         </init>
     </group>
