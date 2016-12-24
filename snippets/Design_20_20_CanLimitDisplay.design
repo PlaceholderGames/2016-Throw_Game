@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="2" id="0">
+        <step comment="false" x="209" y="104">
+            <group eventID="2" id="-1">
+                <actor-set-prop comment="false" x="220" y="129">
+                    <ACTOR eid="var" id="0" vid="3"/>
+                    <int id="1" val="Can Display"/>
+                    <get-val-20-2 comment="false" id="2" x="0" y="0"/>
+                </actor-set-prop>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <draw comment="false" x="128" y="61">
+            <group eventID="3" id="-1">
+                <draw-text comment="false" x="139" y="86">
+                    <actor-get-prop comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="var" id="0" vid="3"/>
+                        <int id="1" val="Can Display"/>
+                    </actor-get-prop>
+                    <int id="1" val="5"/>
+                    <int id="2" val="3"/>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+    <group eventID="3" id="-1"/>
+</groups>

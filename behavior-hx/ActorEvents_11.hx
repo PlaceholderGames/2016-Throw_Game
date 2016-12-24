@@ -90,15 +90,6 @@ class ActorEvents_11 extends ActorScript
 				if((Engine.engine.getGameAttribute("ButtonActivation") == true))
 				{
 					actor.setAnimation("" + "Unlocked");
-					runLater(1000 * 0.5, function(timeTask:TimedTask):Void
-					{
-						actor.setX(-100);
-						actor.setY(-100);
-					}, actor);
-				}
-				else
-				{
-					
 				}
 			}
 		});
